@@ -2,6 +2,7 @@
 import { fetchData, sum } from './src/6.axios';
 // let { sum } = jest.requireActual('./src/6.axios');
 
+
 it('测试能否正常获取用户数据', async () => {
   let r = await fetchData();
   expect(r).toEqual(['张三', '李四']);
