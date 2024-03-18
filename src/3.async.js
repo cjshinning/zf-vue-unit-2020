@@ -1,10 +1,10 @@
 // 异步代码
 
 const getDataByCallback = (cb) => {
-  // setTimeout(() => {
-  setInterval(() => {
+  setTimeout(() => {
+    // setInterval(() => {
     cb({ name: 'jenny' });
-  }, 1000000)
+  }, 1000)
 }
 
 const getDataByPromise = () => {
@@ -13,7 +13,7 @@ const getDataByPromise = () => {
       resolve({
         name: 'jenny'
       })
-    }, 3000)
+    }, 1000)
   })
 }
 
